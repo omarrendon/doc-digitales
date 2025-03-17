@@ -9,6 +9,8 @@ La prueba fue realizada con Reac js en espesifico con Nexts Js (v15).
 
 Se siguieron todas las indicaciones proporcionadas.
 
+ENLACE DEL PROYECTO ALOJADO: https://doc-digitales-jade.vercel.app/
+
 ![](./app/images/1.png)
 ![](./app/images/2.png)
 ![](./app/images/3.png)
