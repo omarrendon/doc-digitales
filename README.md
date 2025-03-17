@@ -9,15 +9,15 @@ La prueba fue realizada con Reac js en espesifico con Nexts Js (v15).
 
 Se siguieron todas las indicaciones proporcionadas.
 
-![](./app/images/1.png.png)
-![](./app/images/2.png.png)
-![](./app/images/3.png.png)
-![](./app/images/4.png.png)
-![](./app/images/5.png.png)
-![](./app/images/6.png.png)
-![](./app/images/7.png.png)
-![](./app/images/8.png.png)
-![](./app/images/9.png.png)
+![](./app/images/1.png)
+![](./app/images/2.png)
+![](./app/images/3.png)
+![](./app/images/4.png)
+![](./app/images/5.png)
+![](./app/images/6.png)
+![](./app/images/7.png)
+![](./app/images/8.png)
+![](./app/images/9.png)
 
 ## Para ejecutar el proyecto en local los comandos son los siguientes.
 
