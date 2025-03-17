@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import "./CardContent.css";
 
 interface ICardProps {
   title: string;

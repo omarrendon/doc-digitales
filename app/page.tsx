@@ -1,24 +1,35 @@
-import { CardContent } from "./components/CardContent/CardContent";
 import { Calculator } from "lucide-react";
 import { CirclePercent } from "lucide-react";
 import { BadgeDollarSign } from "lucide-react";
 import { Receipt } from "lucide-react";
+import { SquarePen } from "lucide-react";
+import { CardContent } from "./components/CardContent";
+import { BenefitsContent } from "./components/BenefitsContent";
+import { RefreshCw } from "lucide-react";
+import { FileDown } from "lucide-react";
+import { FooterContent } from "./components/FooterContent";
 
 export default function Home() {
   return (
     <>
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center  min-h-screen p-8 pb-15 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <header>
-          <h1>
-            tu <span>Conta</span>
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center  min-h-screen p-8 pb-15  gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <header className="flex flex-col mt-20 md:mt-10">
+          <h1 className="text-4xl md:text-8xl">
+            Tu <span className="text-blue-700 font-bold ">Conta</span>
           </h1>
-          <p>Tu Contador en Línea</p>
-          <p>
-            <strong>Nuevo servicio!</strong>
-          </p>
-          <p>Encárgate de tu negocio, nosotros de tu contabilidad.</p>
+          <span className="text-start md:text-end font-medium">
+            Tu Contador en Línea
+          </span>
+          <div className="mt-5  ">
+            <p className="text-center">
+              <strong>¡Nuevo servicio!</strong>
+            </p>
+            <h2 className="text-start mt-2 md:text-center ">
+              Encárgate de tu negocio, nosotros de tu contabilidad.
+            </h2>
+          </div>
         </header>
-        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start mt-20">
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-8xl w-full group ">
             <CardContent
               title="Hacemos tu contabilidad mensual"
@@ -38,57 +49,42 @@ export default function Home() {
             />
           </section>
 
-          <section>
-            <video controls>
-              {/* <source src="video.mp4" type="video/mp4"> */}
-              Tu navegador no soporta el video.
-            </video>
+          <section className="grid grid-cols-1 md:grid-cols-2  gap-8 max-w-8xl w-full group mt-4 ">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/OG4hQm95_U0"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <BenefitsContent />
           </section>
+          <section className="w-full h-full mt-6 grid grid-cols grid-cols-1 md:grid-cols-3 rounded-md bg-blue-700 p-4 ">
+            <div className="text-white flex flex-col items-center p-5">
+              <SquarePen size={"100px"} color="#ffff" />
+              <strong className="mt-3 ">Paso 1</strong>
+              <p className="font-bold text-center">Agrega tu FIEL</p>
+            </div>
 
-          <section>
-            <h2>Beneficios</h2>
-            {/* <ul>
-              <li>
-                <strong>Automático:</strong> Ahorra tiempo al eliminar la tarea
-                de enviar facturas a tu contador. ¡El proceso es automático!
-              </li>
-              <li>
-                <strong>Servicio Oportuno:</strong> Comunicación más fácil y
-                efectiva con tu contador personal.
-              </li>
-              <li>
-                <strong>Simplicidad:</strong> Información contable en tiempo
-                real.
-              </li>
-              <li>
-                <strong>Confiable:</strong> Cálculos hechos por uno de nuestros
-                contadores expertos asignado especialmente a tu negocio.
-              </li>
-            </ul> */}
-          </section>
-          <section>
-            <h2>¿Cómo funciona?</h2>
-            <ol>
-              <li>
-                <strong>Paso 1:</strong> Agrega tu FIEL
-              </li>
-              <li>
-                <strong>Paso 2:</strong> Sincroniza tus cuentas bancarias
-              </li>
-              <li>
-                <strong>Paso 3:</strong> Recibe mensualmente tu declaración de
-                impuestos
-              </li>
-            </ol>
+            <div className="text-white flex flex-col items-center p-5">
+              <RefreshCw size={"100px"} color="#ffff" />
+              <strong className="mt-3 ">Paso 2</strong>
+              <p className="font-bold text-center">
+                {" "}
+                Sincroniza tus cuentas bancarias
+              </p>
+            </div>
+            <div className="text-white flex flex-col items-center p-5">
+              <FileDown size={"100px"} color="#ffff" />
+              <strong className="mt-3 ">Paso 3</strong>
+              <p className="font-bold text-center">
+                Recibe mensualmente tu declaración de impuestos
+              </p>
+            </div>
           </section>
         </main>
-        <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-          <p>
-            ¿Quieres cambiar a tu Conta? Nos encargamos de llevar a cabo la
-            transición de toda tu contabilidad hasta el día de hoy.
-          </p>
-          <button>Ver Paquetes</button>
-          <button>Agenda una cita con un contador experto</button>
+        <footer className="grid grid-cols-1 mt-50  md:mb-20 md:grid-cols-1 md:mt-20 lg:grid-cols-1 gap-8 max-w-8xl w-full group ">
+          <FooterContent />
         </footer>
       </div>
     </>
